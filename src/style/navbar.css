@@ -23,6 +23,8 @@ a{
 }
 
 .leftSide h1{
+    position: relative;
+    top: -5px;
     margin: 0;
 }
 
