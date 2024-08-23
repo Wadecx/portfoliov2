@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import "./home.css";
+import { ArrowUpRight, Mail } from 'lucide-react';
+
 const Home = () => {
   return (
     <>
@@ -26,12 +28,14 @@ const Home = () => {
             </div>
 
             <div className="buttons">
-              <a href="">Contact</a>
-              <a href="">Projets</a>
+              <a href="" className="contact">Contact <Mail/></a>
+              <a href="" className="projects">Projets <ArrowUpRight /></a>
             </div>
         </div>
 
-        <div className="image"></div>
+        <div className="image">
+          <img src="./moi.png" alt="" />
+        </div>
       </div>
     </>
   );
