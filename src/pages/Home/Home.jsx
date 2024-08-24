@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import "./home.css";
 import { ArrowUpRight, Mail } from 'lucide-react';
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -37,6 +38,7 @@ const Home = () => {
           <img src="./moi.png" alt="" />
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
