@@ -1,7 +1,7 @@
-import React from "react";
+import { useRef } from "react";
 import Navbar from "../../components/Navbar";
 import "./home.css";
-import { ArrowUpRight, Mail } from 'lucide-react';
+import { ArrowUpRight, Mail } from "lucide-react";
 import Footer from "../../components/Footer";
 
 const Home = () => {
@@ -21,24 +21,28 @@ const Home = () => {
               </h1>
             </div>
           </div>
-            <div className="paragraphe">
-              <p>
-                Developpeur multi-orientées, je suis passioné d'informmatique
-                depuis mon plus jeune âge.
-              </p>
-            </div>
+          <div className="paragraphe">
+            <p>
+              Developpeur multi-orientées, je suis passioné d'informmatique
+              depuis mon plus jeune âge.
+            </p>
+          </div>
 
-            <div className="buttons">
-              <a href="" className="contact">Contact <Mail/></a>
-              <a href="" className="projects">Projets <ArrowUpRight /></a>
-            </div>
+          <div className="buttons">
+            <a href="" className="contact">
+              Contact <Mail />
+            </a>
+            <a href="" className="projects">
+              Projets <ArrowUpRight />
+            </a>
+          </div>
         </div>
 
         <div className="image">
           <img src="./moi.png" alt="" />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

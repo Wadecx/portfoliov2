@@ -6,7 +6,7 @@
     position: absolute;
     bottom: 0;
     background-color: #242424;
-    width: 64%;
+    width: 67%;
     justify-content: space-between;
     height: 20vh;
     object-fit: cover;
@@ -52,7 +52,7 @@
 .right_side a{
     gap: 2rem;
     color: white;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     border-bottom: 1px solid #363534;
     display: flex;
     justify-content: space-between;
