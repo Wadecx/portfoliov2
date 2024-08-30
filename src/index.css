@@ -1,5 +1,15 @@
 body{
     margin: 0;
     padding: 0;
-    overflow-y: hidden;
+    background-color: #FFFCF8;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 800px) {
+
+    body{
+        overflow: visible;
+        overflow-x: hidden;
+    }
+
 }

@@ -30,6 +30,7 @@ h6 {
 
 .introduction .paragraphe {
   font-size: 20px;
+  width: 50%;
 }
 
 .hello .credentials {
@@ -61,7 +62,7 @@ h6 {
 }
 
 .contact {
-  background-color: #d27640;
+  background-color: #ea5633;
   color: White;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -70,6 +71,7 @@ h6 {
   display: flex;
   gap: 0.5rem;
   transition: 0.2s ease-in;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .3), 0 2px 4px -2px rgba(0, 0, 0, .3);
 }
 
 .contact:hover {
@@ -98,17 +100,75 @@ h6 {
 }
 
 .image {
-width: fit-content;
+  width: fit-content;
   display: flex;
   justify-content: flex-end;
   object-fit: cover;
 }
 
 .image img {
-  width: 61%;
+  height: 95vh;
   padding: 0;
   margin: 0;
   background-size: cover;
   background-position: left;
+  z-index: 998;
+}
+
+.logo {
   z-index: 999;
+  position: absolute;
+  left: 70%;
+  align-items: center;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1300px) {
+
+  .home {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .wrapper h1{
+    font-size: 30px;
+  }
+
+  .credentials h1{
+    font-size: 30px;
+  }
+
+  .wrapper h3{
+    font-size: 15px;
+  }
+
+  .home .introduction {
+    height: 45vh;
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 10vh;
+  }
+
+  .introduction .paragraphe{
+    width: 90%;
+  }
+
+  .image {
+    width: fit-content;
+    display: flex;
+    object-fit: cover;
+    margin-top: 10vh;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-position: left;
+    z-index: 998;
+  }
+
+
 }

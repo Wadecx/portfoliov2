@@ -13,8 +13,8 @@ const Footer = () => {
 
       <div className="right_side">
         <ul>
-            <li><a href="">Mon Github <Github /></a></li>
-            <li><a href="">Mon LinkedIn <Linkedin /></a></li>
+            <li><a href="https://github.com/Wadecx" target='_blank'>Mon Github <Github /></a></li>
+            <li><a href="https://www.linkedin.com/in/tyron-morcel-7a31a2300/"  target='_blank'>Mon LinkedIn <Linkedin /></a></li>
         </ul>
       </div>
     </div>

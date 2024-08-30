@@ -1,14 +1,34 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import Navbar from "./components/Navbar";
 import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Projects from "./pages/Projects/Projects";
+import Contact from "./pages/Contact/Contact";
+
+import { Link, RouterProvider, createBrowserRouter } from "react-router-dom";
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/about",
+    element: <About/>
+  },
+  {
+    path: "/projects",
+    element: <Projects/>
+  },
+  {
+    path: "/contact",
+    element: <Contact/>
+  },
+]);
 
 function App() {
   return (
     <>
-      <Home />
+      <RouterProvider router={router} />
     </>
   );
 }
